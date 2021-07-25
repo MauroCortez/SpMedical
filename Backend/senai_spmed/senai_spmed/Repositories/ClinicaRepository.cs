@@ -13,7 +13,7 @@ namespace senai_spmed.Repositories
     public class ClinicaRepository : IClinicaRepository
     {
 
-        BlogContext ctx = new BlogContext();
+        spmedContext ctx = new spmedContext();
         public void Atualizar(int idClinica, Clinica clinicaAtualizada)
         {
             Clinica clinicaBuscada = BuscarPorId(idClinica);

@@ -11,7 +11,7 @@ namespace senai_spmed.Repositories
     public class UsuarioRepository : IUsuarioRepository
     {
 
-        BlogContext ctx = new BlogContext();
+        spmedContext ctx = new spmedContext();
         public void Atualizar(int idUsuario, Usuario usuarioAtualizado)
         {
             Usuario usuarioBuscado = BuscarPorId(idUsuario);

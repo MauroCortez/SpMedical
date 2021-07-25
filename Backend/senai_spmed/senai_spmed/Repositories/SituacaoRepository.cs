@@ -11,7 +11,7 @@ namespace senai_spmed.Repositories
     public class SituacaoRepository : ISituacaoRepository
     {
 
-        BlogContext ctx = new BlogContext();
+        spmedContext ctx = new spmedContext();
         public void Atualizar(int idSituacao, Situacao situacaoAtualizada)
         {
             Situacao situacaoBuscada = BuscarPorId(idSituacao);
